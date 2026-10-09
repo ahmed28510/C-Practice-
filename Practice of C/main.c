@@ -17,3 +17,21 @@ int main(){
     }
 
 }
+
+// Average Number
+#include <cs50.h>
+#include <stdio.h>
+
+float average(int length, int number[]);
+
+int main(void)
+{
+    const int N = 3;
+    int scores[N];
+    for (int i = 0; i < N; i++)
+    {
+        scores[i] = get_int("scores: ");
+    }
+    
+    printf("Average: %f\n", average(N, scores));
+}
